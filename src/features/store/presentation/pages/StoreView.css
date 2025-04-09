@@ -1,0 +1,170 @@
+.store-view {
+    min-height: 100vh;
+    background: linear-gradient(to top right, #e0e7ff, #f3e8ff, #ffe4e6);
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .store-view h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    transform: scale(1.05);
+    background: #1e40af;
+  }
+  
+  .store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  .store-card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .store-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .store-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .store-info {
+    padding: 1rem;
+  }
+  
+  .store-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .store-info p {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  .store-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .store-actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .store-actions .edit {
+    background-color: #fbbf24;
+    color: white;
+  }
+  
+  .store-actions .edit:hover {
+    background-color: #f59e0b;
+  }
+  
+  .store-actions .delete {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .store-actions .delete:hover {
+    background-color: #dc2626;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .modal-buttons .cancel {
+    background-color: #d1d5db;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons .save {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons .save:hover {
+    background-color: #1d4ed8;
+  }
+  
